@@ -23,4 +23,15 @@ public class FindMaxNumTest {
         Float maxNum = findMaxNum.findMaxFloat(a,b,c);
         Assert.assertEquals((Float)8.5f,maxNum);
     }
+
+    @Test
+    public void givenThreeStringValue_WhenProper_ReturnTrue() {
+        String a = "PRIYANKA";
+        String b = "Ram";
+        String c = "Piyu";
+        FindMaxNum findMaxNum = new  FindMaxNum();
+        String maxNum = findMaxNum.findMaxString(a,b,c);
+        Assert.assertEquals("Ram",maxNum);
+
+    }
 }
