@@ -22,6 +22,5 @@ public class FindMaxNum<E extends Comparable> {
             return (E) num2;
         }
     }
-
 }
 
