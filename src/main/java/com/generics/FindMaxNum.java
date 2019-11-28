@@ -1,8 +1,7 @@
 package com.generics;
 
 public class FindMaxNum {
-
-    public Integer findMaxInteger(Integer a, Integer b, Integer c) {
+    static <E extends Comparable<E>> E findMaxValue(E a, E b, E c) {
         if(a.compareTo(b) > 0) {
             return a;
         }
@@ -14,28 +13,5 @@ public class FindMaxNum {
         }
     }
 
-    public Float findMaxFloat(Float a, Float b, Float c) {
-        if(a.compareTo(b) > 0) {
-            return a;
-        }
-        else if( c.compareTo(b) > 0){
-            return c;
-        }
-        else {
-            return b;
-        }
-    }
-
-    public String findMaxString(String a, String b, String c) {
-        if(a.compareTo(b) > 0) {
-            return a;
-        }
-        else if( c.compareTo(b) > 0){
-            return c;
-        }
-        else {
-            return b;
-        }
-    }
 }
 
