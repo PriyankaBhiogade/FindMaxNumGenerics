@@ -13,5 +13,17 @@ public class FindMaxNum {
             return b;
         }
     }
+
+    public Float findMaxFloat(Float a, Float b, Float c) {
+        if(a.compareTo(b) > 0) {
+            return a;
+        }
+        else if( c.compareTo(b) > 0){
+            return c;
+        }
+        else {
+            return b;
+        }
+    }
 }
 
