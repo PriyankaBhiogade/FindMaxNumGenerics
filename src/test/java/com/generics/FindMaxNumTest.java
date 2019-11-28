@@ -9,9 +9,9 @@ public class FindMaxNumTest {
         Integer a = 1;
         Integer b = 7;
         Integer c = 8;
-        FindMaxNum findMaxNum = new  FindMaxNum();
-        Integer maxNum = findMaxNum.findMaxValue(a,b,c);
-        Assert.assertEquals((Integer)8,maxNum);
+        FindMaxNum<Integer> integerFindMaxNum = new FindMaxNum<>(a, b, c);
+        Comparable maxValue = integerFindMaxNum.findMaxValue();
+        Assert.assertEquals(8,maxValue);
     }
 
     @Test
@@ -19,9 +19,9 @@ public class FindMaxNumTest {
         Float a = 1.5f;
         Float b = 7.8f;
         Float c = 8.5f;
-        FindMaxNum findMaxNum = new  FindMaxNum();
-        Float maxNum = findMaxNum.findMaxValue(a,b,c);
-        Assert.assertEquals((Float)8.5f,maxNum);
+        FindMaxNum<Float> floatFindMaxNum = new FindMaxNum<>(a, b, c);
+        Comparable maxValue = floatFindMaxNum.findMaxValue();
+        Assert.assertEquals(8.5f,maxValue);
     }
 
     @Test
@@ -29,8 +29,8 @@ public class FindMaxNumTest {
         String a = "PRIYANKA";
         String b = "Ram";
         String c = "Piyu";
-        FindMaxNum findMaxNum = new  FindMaxNum();
-        String maxNum = findMaxNum.findMaxValue(a,b,c);
-        Assert.assertEquals("Ram",maxNum);
+        FindMaxNum<String> stringFindMaxNum = new FindMaxNum<>(a, b, c);
+        Comparable maxValue = stringFindMaxNum.findMaxValue();
+        Assert.assertEquals("Ram",maxValue);
     }
 }
