@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.generics.FindMaxNumTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-28T12:22:38" hostname="admin1-desktop" time="0.002">
+<testsuite name="com.generics.FindMaxNumTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-29T04:04:32" hostname="admin1-desktop" time="0.006">
   <properties/>
-  <testcase name="givenThreeIntegerValue_WhenProper_ReturnTrue" classname="com.generics.FindMaxNumTest" time="0.001"/>
-  <testcase name="givenThreeStringValue_WhenProper_ReturnTrue" classname="com.generics.FindMaxNumTest" time="0.0"/>
-  <testcase name="givenThreeFloatValue_WhenProper_ReturnTrue" classname="com.generics.FindMaxNumTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="givenThreeIntegerValue_WhenProper_ReturnPrintThatValue" classname="com.generics.FindMaxNumTest" time="0.006"/>
+  <system-out><![CDATA[30
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

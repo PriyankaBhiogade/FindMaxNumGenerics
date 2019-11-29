@@ -11,16 +11,18 @@ public class FindMaxNum<E extends Comparable> {
         this.num3 = num3;
     }
 
-   public  <E extends Comparable> E findMaxValue() {
-        if(num1.compareTo(num2) > 0) {
-            return (E) num1;
+    public <E extends Comparable> E findMaxValue() {
+        E max = (E) num2;
+        if (num1.compareTo(max) > 0) {
+            max = (E) num1;
+        } else if (num3.compareTo(max) > 0) {
+            max = (E) num3;
         }
-        else if( num3.compareTo(num2) > 0){
-            return (E) num3;
-        }
-        else {
-            return (E) num2;
-        }
+        printMax(max);
+        return max;
+    }
+    private static <T> void printMax(T maximumValue){
+        System.out.println(maximumValue);
     }
 }
 
