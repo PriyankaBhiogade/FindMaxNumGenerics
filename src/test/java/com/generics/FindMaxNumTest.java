@@ -45,8 +45,14 @@ public class FindMaxNumTest {
     }
 
     @Test
-    public void givenMoreThanThreeInt_WhenProper_RetunMaxInt() {
+    public void givenMoreThanThreeInt_WhenProper_ReturnMaxInt() {
         FindMaximumNumber findMaximumNumber = new FindMaximumNumber<Integer>(10,0,45,85,20,10);
         Assert.assertEquals((Integer) 85, findMaximumNumber.findMax());
+    }
+
+    @Test
+    public void givenMoreThanThreeFloat_WhenProper_ReturnMaxFloatNum() {
+        FindMaximumNumber findMaximumNumber = new FindMaximumNumber<Float>(10.5f,0.2f,45.7f,-85.51f,20.0f,10f);
+        Assert.assertEquals((Float) 45.7f, findMaximumNumber.findMax());
     }
 }

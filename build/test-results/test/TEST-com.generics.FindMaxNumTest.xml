@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.generics.FindMaxNumTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-29T06:52:00" hostname="admin1-desktop" time="0.003">
+<testsuite name="com.generics.FindMaxNumTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-29T06:58:39" hostname="admin1-desktop" time="0.003">
   <properties/>
-  <testcase name="givenMoreThanThreeInt_WhenProper_RetunMaxInt" classname="com.generics.FindMaxNumTest" time="0.003"/>
+  <testcase name="givenMoreThanThreeFloat_WhenProper_ReturnMaxFloatNum" classname="com.generics.FindMaxNumTest" time="0.003"/>
   <system-out><![CDATA[
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
