@@ -61,5 +61,4 @@ public class FindMaxNumTest {
         FindMaximumNumber findMaximumNumber = new FindMaximumNumber<String>("aa","aaa","aaaa","aaaaa","-aaaaaa");
         Assert.assertEquals((String) "aaaaa", findMaximumNumber.findMax());
     }
-
 }

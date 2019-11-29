@@ -19,6 +19,11 @@ import java.util.Arrays;
 
         public T findMax() {
             Arrays.sort(valueArr);
+            printMax( valueArr[valueArr.length - 1]);
             return valueArr[valueArr.length - 1];
+        }
+
+        private static <T> void printMax(T maximumValue){
+            System.out.println("Maximum Value:"+maximumValue);
         }
     }
