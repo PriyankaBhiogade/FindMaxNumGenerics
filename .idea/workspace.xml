@@ -72,7 +72,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.FindMaxNumTest.givenMoreThanThreeFloat_WhenProper_ReturnMaxFloatNum">
+  <component name="RunManager" selected="Gradle.FindMaxNumTest.givenMoreThanThreeString_WhenProper_ReturnMaxStringValue">
     <configuration name="FindMaxNumTest.givenMoreThanThreeFloat_WhenProper_ReturnMaxFloatNum" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -133,6 +133,26 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="FindMaxNumTest.givenMoreThanThreeString_WhenProper_ReturnMaxStringValue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.generics.FindMaxNumTest.givenMoreThanThreeString_WhenProper_ReturnMaxStringValue&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="FindMaxNumTest.givenMoreThenThreeChar_WhenProper_RetunMax" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -153,33 +173,13 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="FindMaxNumTest.givenThreeIntegerValue_WhenProper_ReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.generics.FindMaxNumTest.givenThreeIntegerValue_WhenProper_ReturnTrue&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.FindMaxNumTest.givenMoreThanThreeString_WhenProper_ReturnMaxStringValue" />
         <item itemvalue="Gradle.FindMaxNumTest.givenMoreThanThreeFloat_WhenProper_ReturnMaxFloatNum" />
         <item itemvalue="Gradle.FindMaxNumTest.givenMoreThanThreeInt_WhenProper_RetunMaxInt" />
         <item itemvalue="Gradle.FindMaxNumTest.givenMoreThanThreeInt_WhenProper_RetunMax" />
         <item itemvalue="Gradle.FindMaxNumTest.givenMoreThenThreeChar_WhenProper_RetunMax" />
-        <item itemvalue="Gradle.FindMaxNumTest.givenThreeIntegerValue_WhenProper_ReturnTrue" />
       </list>
     </recent_temporary>
   </component>

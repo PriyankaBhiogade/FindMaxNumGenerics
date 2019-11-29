@@ -55,4 +55,11 @@ public class FindMaxNumTest {
         FindMaximumNumber findMaximumNumber = new FindMaximumNumber<Float>(10.5f,0.2f,45.7f,-85.51f,20.0f,10f);
         Assert.assertEquals((Float) 45.7f, findMaximumNumber.findMax());
     }
+
+    @Test
+    public void givenMoreThanThreeString_WhenProper_ReturnMaxStringValue() {
+        FindMaximumNumber findMaximumNumber = new FindMaximumNumber<String>("aa","aaa","aaaa","aaaaa","-aaaaaa");
+        Assert.assertEquals((String) "aaaaa", findMaximumNumber.findMax());
+    }
+
 }
