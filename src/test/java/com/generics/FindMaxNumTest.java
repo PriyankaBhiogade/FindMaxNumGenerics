@@ -5,41 +5,71 @@ import org.junit.Test;
 
 public class FindMaxNumTest {
     @Test
-    public void givenThreeIntegerValue_WhenProper_ReturnTrue() {
-        Integer a = 8;
-        Integer b = 1;
-        Integer c = 5;
-        FindMaxNum<Integer> integerFindMaxNum = new FindMaxNum<Integer>(a, b, c);
+    public void givenAt1stPositionMaxNum_WhenProper_ReturnMaxNum() {
+        FindMaxNum<Integer> integerFindMaxNum = new FindMaxNum<Integer>(30,20,10);
         Comparable maxValue = integerFindMaxNum.findMaxValue();
-        Assert.assertEquals(8,maxValue);
+        Assert.assertEquals(30,maxValue);
     }
 
     @Test
-    public void givenThreeFloatValue_WhenProper_ReturnTrue() {
-        Float a = 1.5f;
-        Float b = 7.8f;
-        Float c = 8.5f;
-        FindMaxNum<Float> floatFindMaxNum = new FindMaxNum<Float>(a, b, c);
-        Comparable maxValue = floatFindMaxNum.findMaxValue();
-        Assert.assertEquals(8.5f,maxValue);
+    public void givenAt2stPositionMaxNum_WhenProper_ReturnMaxNum() {
+        FindMaxNum<Integer> integerFindMaxNum = new FindMaxNum<Integer>(20,30,10);
+        Comparable maxValue = integerFindMaxNum.findMaxValue();
+        Assert.assertEquals(30,maxValue);
     }
 
     @Test
-    public void givenThreeStringValue_WhenProper_ReturnTrue() {
-        String a = "PRIYANKA";
-        String b = "Ram";
-        String c = "Piyu";
-        FindMaxNum<String> stringFindMaxNum = new FindMaxNum<String>(a, b, c);
-        Comparable maxValue = stringFindMaxNum.findMaxValue();
-        Assert.assertEquals("Ram",maxValue);
+    public void givenAt3stPositionMaxNum_WhenProper_ReturnMaxNum() {
+        FindMaxNum<Integer> integerFindMaxNum = new FindMaxNum<Integer>(10,20,30);
+        Comparable maxValue = integerFindMaxNum.findMaxValue();
+        Assert.assertEquals(30,maxValue);
+    }
+
+    @Test
+    public void givenAt1stPositionMaxFloatNum_WhenProper_ReturnMaxNum() {
+        FindMaxNum<Float> integerFindMaxNum = new FindMaxNum<Float>(30f,20f,10f);
+        Comparable maxValue = integerFindMaxNum.findMaxValue();
+        Assert.assertEquals(30f,maxValue);
+    }
+
+    @Test
+    public void givenAt2stPositionMaxFloatNum_WhenProper_ReturnMaxNum() {
+        FindMaxNum<Float> integerFindMaxNum = new FindMaxNum<Float>(10f,30f,20f);
+        Comparable maxValue = integerFindMaxNum.findMaxValue();
+        Assert.assertEquals(30f,maxValue);
+    }
+
+    @Test
+    public void givenAt3stPositionMaxFloatNum_WhenProper_ReturnMaxNum() {
+        FindMaxNum<Float> integerFindMaxNum = new FindMaxNum<Float>(10f,20f,30f);
+        Comparable maxValue = integerFindMaxNum.findMaxValue();
+        Assert.assertEquals(30f,maxValue);
+    }
+
+    @Test
+    public void givenAt1stPositionMaxString_WhenProper_ReturnMaxNum() {
+        FindMaxNum<String> integerFindMaxNum = new FindMaxNum<String>("Peach","Apple","Banana");
+        Comparable maxValue = integerFindMaxNum.findMaxValue();
+        Assert.assertEquals("Peach",maxValue);
+    }
+
+    @Test
+    public void givenAt2stPositionMaxString_WhenProper_ReturnMaxNum() {
+        FindMaxNum<String> integerFindMaxNum = new FindMaxNum<String>("Apple","Peach","Banana");
+        Comparable maxValue = integerFindMaxNum.findMaxValue();
+        Assert.assertEquals("Peach",maxValue);
+    }
+
+    @Test
+    public void givenAt3stPositionMaxString_WhenProper_ReturnMaxNum() {
+        FindMaxNum<String> integerFindMaxNum = new FindMaxNum<String>("Apple","Banana","Peach");
+        Comparable maxValue = integerFindMaxNum.findMaxValue();
+        Assert.assertEquals("Peach",maxValue);
     }
 
     @Test
     public void givenThreeIntegerValue_WhenProper_ReturnPrintThatValue() {
-        Integer a = 10;
-        Integer b = 20;
-        Integer c = 30;
-        FindMaxNum<Integer> integerFindMaxNum = new FindMaxNum<Integer>(a, b, c);
+        FindMaxNum<Integer> integerFindMaxNum = new FindMaxNum<Integer>(10,20,30);
         Comparable maxValue = integerFindMaxNum.findMaxValue();
         Assert.assertEquals(30,maxValue);
     }
